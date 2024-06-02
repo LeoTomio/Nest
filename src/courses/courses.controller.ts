@@ -1,8 +1,11 @@
+import { CoursesService } from './courses.service';
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, Post, Put, Res } from '@nestjs/common';
 import { response } from 'express';
 
 @Controller('courses')
 export class CoursesController {
+
+    constructor(private readonly courseService: CoursesService) { }
 
     @Get()
     findAll(@Res() response) {
