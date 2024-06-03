@@ -23,10 +23,12 @@ export class CoursesService {
             // throw new HttpException(`Curso com id ${id} não encontrado`, HttpStatus.NOT_FOUND)
             throw new NotFoundException(`Curso com id ${id} não encontrado`)
         }
+        return course
     }
 
     create(createCourseDTO: any) {
         this.courses.push(createCourseDTO)
+        return createCourseDTO
     }
 
     update(id: number, updateCourseDTO: any) {
