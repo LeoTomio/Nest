@@ -12,8 +12,6 @@ export const dataSourceOptions: DataSourceOptions = {
     database: 'devtraining',
     entities: [],
     synchronize: true, // depois que a entidade esta definida no codigo, ela cria automaticamente no banco de dados a coluna 
-
-
 }
 
 @Module({
