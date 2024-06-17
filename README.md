@@ -77,3 +77,9 @@ Nest is [MIT licensed](LICENSE).
 ## ANOTAÇÕES
 
 - Para rodar as migrations sempre dar um build antes, para deixar atualizado
+
+
+## Comandos
+- m-create nome: cria uma migrations com o nome passado no terminal
+- m-up: subir uma nova migration
+- m-down: reverter uma migration
